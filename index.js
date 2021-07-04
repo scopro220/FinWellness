@@ -3,7 +3,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const keys = require("./config/keys");
+const cors = require("cors");
 
+app.use(cors());
 app.use(express.json());
 
 const uri = keys.ATLAS_URI;

@@ -65,6 +65,10 @@ footer .logo {
   margin: 0 8px;
 }
 
+.footer-socials:hover {
+  cursor: pointer;
+}
+
 .copyright {
   padding-bottom: 15px;
   color: #fff;
@@ -163,8 +167,110 @@ footer .logo {
   padding: 35px;
   color: #fff;
   letter-spacing: 2px;
-  font-weight: bold;
+  font-size: 18px;
   text-align: center;
   display: flex;
   align-items: center;
+}
+
+.user-page {
+  height: calc(100vh - 159px);
+}
+
+.up-wrapper {
+  display: flex;
+  padding-top: 75px;
+}
+
+.up-transaction-form-wrapper {
+  width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.transaction-form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+  width: 250px;
+  border-radius: 12px;
+  -webkit-box-shadow: 4px 4px 12px -4px rgba(0, 0, 0, 0.66),
+    1px 1px 12px 4px rgba(0, 0, 0, 0.66);
+  box-shadow: 4px 4px 12px -4px rgba(0, 0, 0, 0.66),
+    1px 1px 12px 4px rgba(0, 0, 0, 0.66);
+  margin-bottom: 25px;
+}
+
+.transaction-form > * {
+  width: 165px;
+  padding: 5px;
+  border-radius: 12px;
+  border: 2px solid var(--main-color);
+}
+
+.transaction-form button {
+  border: 2px solid var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.transaction-form button:hover {
+  cursor: pointer;
+}
+
+.up-viz {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 165px;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.up-viz a {
+  text-decoration: none;
+  color: black;
+}
+
+.up-transactions {
+  width: 800px;
+}
+
+.up-txn-list {
+  margin: auto;
+  height: 400px;
+  width: 625px;
+  margin-top: 85px;
+  overflow-y: auto;
+}
+
+.up-txn-item {
+  margin: 5px;
+  padding: 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.up-txn-item-text {
+  width: 200px;
+}
+.up-txn-item-text h2 {
+  text-decoration: underline;
+}
+
+.up-txn-item-delete {
+  color: red;
+}
+
+.up-txn-item-delete:hover {
+  cursor: pointer;
 }
