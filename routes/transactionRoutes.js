@@ -11,7 +11,6 @@ module.exports = (app) => {
     const newTransaction = new Transaction({
       transactionType: req.body.transactionType,
       category: req.body.category,
-      subCategory: req.body.subCategory,
       amount: req.body.amount,
       date: req.body.date,
     });
