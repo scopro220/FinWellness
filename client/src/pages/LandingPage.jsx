@@ -10,7 +10,14 @@ const LandingPage = () => {
     <div>
       <section className="lp-wrapper">
         <div className="main-video-wrapper">
-          <video height="500" src={mainVideo} autoPlay loop></video>
+          <video
+            height="500"
+            src={mainVideo}
+            autoPlay
+            loop
+            playsInline
+            muted
+          ></video>
         </div>
         <div className="main-message">
           <p className="main-message-title">

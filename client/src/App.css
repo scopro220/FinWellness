@@ -85,6 +85,7 @@ footer .logo {
 .lp-wrapper {
   display: flex;
   height: 700px;
+  padding-top: 75px;
 }
 
 .main-video-wrapper {
