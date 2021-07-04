@@ -5,7 +5,7 @@ import axios from "axios";
 const TransactionItem = ({ item, txnData, setTxnData }) => {
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:5000/api/transaction/" + item._id)
+      .delete("/api/transaction/" + item._id)
       .then((response) => console.log(response.data));
 
     setTxnData(txnData.filter((el) => el._id !== id));

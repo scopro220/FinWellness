@@ -44,7 +44,7 @@ const UserPage = ({
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/transactions")
+      .get("/api/transactions")
       .then((response) => setTxnData(response.data))
       .catch((err) => console.log(`Error: ${err}`));
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -75,12 +75,12 @@ const UserPage = ({
       date,
     };
     axios
-      .post("http://localhost:5000/api/transactions/add", data)
+      .post("/api/transactions/add", data)
       .then((response) => console.log(response.data))
       .catch((err) => console.log(`Error: ${err}`));
 
     axios
-      .get("http://localhost:5000/api/transactions")
+      .get("/api/transactions")
       .then((response) => setTxnData(response.data));
 
     setTransactionType("");
