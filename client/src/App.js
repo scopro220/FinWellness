@@ -5,6 +5,7 @@ import UserPage from "./pages/UserPage";
 import MetricsPage from "./pages/MetricsPage";
 import "./App.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" exact component={LandingPage} />
         <Route path="/:googleId" exact component={UserPage} />
         <Route path="/:googleId/metrics" exact component={MetricsPage} />
+        <Footer />
       </Router>
     </div>
   );

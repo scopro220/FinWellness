@@ -15,11 +15,18 @@
   max-width: 1280px;
 }
 
+header,
+footer {
+  display: flex;
+  align-items: center;
+}
+
 header {
   background-color: var(--main-color);
-  display: flex;
   justify-content: space-between;
-  align-items: center;
+  position: fixed;
+  width: 1280px;
+  z-index: 1;
 }
 
 .logo-section {
@@ -32,6 +39,35 @@ header {
 header .logo {
   height: 75px;
   width: 75px;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .logo {
+  height: 125px;
+  width: 125px;
+}
+
+.footer-divider {
+  font-size: 48px;
+  color: var(--main-color);
+  margin: 0 20px;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 0 8px;
+}
+
+.copyright {
+  padding-bottom: 15px;
+  color: #fff;
 }
 
 .title-name {
