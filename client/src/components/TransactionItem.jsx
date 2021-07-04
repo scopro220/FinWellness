@@ -14,10 +14,10 @@ const TransactionItem = ({ item, txnData, setTxnData }) => {
   return (
     <div className="up-txn-item">
       <div className="up-txn-item-text">
-        <h2>{item.transactionType}</h2>
-        <h4>{item.category}</h4>
-        <h4>${item.amount}</h4>
-        <h6>{item.date.slice(0, 10)}</h6>
+        <h2>Type: {item.transactionType}</h2>
+        <h4>Category: {item.category}</h4>
+        <h4>Amount: ${item.amount}</h4>
+        <h6>Date: {item.date.slice(0, 10)}</h6>
       </div>
       <div
         className="up-txn-item-delete"

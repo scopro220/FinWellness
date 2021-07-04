@@ -1,6 +1,6 @@
 :root {
   --main-color: #f9a826;
-  --secondary-color: #636363;
+  --secondary-color: #474747;
 }
 
 * {
@@ -141,8 +141,8 @@ footer .logo {
   border-radius: 12px;
   height: 100%;
   width: 300px;
-  -webkit-box-shadow: 12px 12px 12px -4px rgba(0, 0, 0, 0.66);
-  box-shadow: 12px 12px 12px -4px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 12px 12px 12px -4px var(--secondary-color);
+  box-shadow: 12px 12px 12px -4px var(--secondary-color);
 }
 
 .lp-customer-reviews {
@@ -200,10 +200,10 @@ footer .logo {
   height: 350px;
   width: 250px;
   border-radius: 12px;
-  -webkit-box-shadow: 4px 4px 12px -4px rgba(0, 0, 0, 0.66),
-    1px 1px 12px 4px rgba(0, 0, 0, 0.66);
-  box-shadow: 4px 4px 12px -4px rgba(0, 0, 0, 0.66),
-    1px 1px 12px 4px rgba(0, 0, 0, 0.66);
+  -webkit-box-shadow: 2px 2px 12px -4px var(--secondary-color),
+    2px 2px 12px 4px var(--secondary-color);
+  box-shadow: 2px 2px 12px -4px var(--secondary-color),
+    2px 2px 12px 4px var(--secondary-color);
   margin-bottom: 25px;
 }
 
@@ -231,6 +231,7 @@ footer .logo {
   width: 165px;
   margin-top: 25px;
   font-size: 20px;
+  color: var(--secondary-color);
 }
 
 .up-viz a {
@@ -258,10 +259,11 @@ footer .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--secondary-color);
 }
 
 .up-txn-item-text {
-  width: 200px;
+  width: 225px;
 }
 .up-txn-item-text h2 {
   text-decoration: underline;
