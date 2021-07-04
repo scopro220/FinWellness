@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const MetricsPage = () => {
   return (
     <div>
-      <h1>User Page</h1>
+      <h1>Metrics Page</h1>
       <Link to="/:googleId">Go To User Page</Link>
     </div>
   );
