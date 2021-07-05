@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import UserPage from "./pages/UserPage";
 import MetricsPage from "./pages/MetricsPage";
@@ -18,26 +18,28 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Route path="/" exact>
-          <LandingPage />
-        </Route>
-        <Route path="/:googleId" exact>
-          <UserPage
-            txnData={txnData}
-            setTxnData={setTxnData}
-            transactionType={transactionType}
-            setTransactionType={setTransactionType}
-            category={category}
-            setCategory={setCategory}
-            amount={amount}
-            setAmount={setAmount}
-            date={date}
-            setDate={setDate}
-          />
-        </Route>
-        <Route path="/:googleId/metrics" exact>
-          <MetricsPage txnData={txnData} setTxnData={setTxnData} />
-        </Route>
+        <Switch>
+          <Route path="/" exact>
+            <LandingPage />
+          </Route>
+          <Route path="/:googleId" exact>
+            <UserPage
+              txnData={txnData}
+              setTxnData={setTxnData}
+              transactionType={transactionType}
+              setTransactionType={setTransactionType}
+              category={category}
+              setCategory={setCategory}
+              amount={amount}
+              setAmount={setAmount}
+              date={date}
+              setDate={setDate}
+            />
+          </Route>
+          <Route path="/:googleId/metrics" exact>
+            <MetricsPage txnData={txnData} setTxnData={setTxnData} />
+          </Route>
+        </Switch>
         <Footer />
       </Router>
     </div>
