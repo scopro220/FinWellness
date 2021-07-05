@@ -28,7 +28,6 @@ const MetricsPage = ({ txnData, setTxnData }) => {
       return temp;
     });
 
-  console.log(expensesList);
   const incData = txnData.filter((item) => item.transactionType === "Income");
   const expData = txnData.filter((item) => item.transactionType === "Expense");
 
