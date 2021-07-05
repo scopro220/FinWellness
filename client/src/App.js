@@ -36,7 +36,7 @@ function App() {
           />
         </Route>
         <Route path="/:googleId/metrics" exact>
-          <MetricsPage />
+          <MetricsPage txnData={txnData} setTxnData={setTxnData} />
         </Route>
         <Footer />
       </Router>

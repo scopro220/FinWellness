@@ -30,10 +30,8 @@ const UserPage = ({
   const expenseCategories = [
     "",
     "Home",
-    "Entertainment",
-    "Phone",
     "Utilities",
-    "Insurance",
+    "Phone",
     "Food",
     "Shopping",
     "Travel",
@@ -48,7 +46,7 @@ const UserPage = ({
       .then((response) => setTxnData(response.data))
       .catch((err) => console.log(`Error: ${err}`));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [txnData]);
+  }, []);
 
   const handleTransactionTypeChange = (e) => {
     setTransactionType(e.target.value);

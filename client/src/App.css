@@ -79,6 +79,11 @@ footer .logo {
   font-size: 28px;
 }
 
+.title-name a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .login {
   padding-right: 65px;
   font-size: 20px;
@@ -173,11 +178,13 @@ footer .logo {
   align-items: center;
 }
 
-.user-page {
+.user-page,
+.metrics-page {
   height: calc(100vh - 159px);
 }
 
-.up-wrapper {
+.up-wrapper,
+.mp-wrapper {
   display: flex;
   padding-top: 75px;
 }
@@ -200,10 +207,10 @@ footer .logo {
   height: 350px;
   width: 250px;
   border-radius: 12px;
-  -webkit-box-shadow: 2px 2px 12px -4px var(--secondary-color),
-    2px 2px 12px 4px var(--secondary-color);
-  box-shadow: 2px 2px 12px -4px var(--secondary-color),
-    2px 2px 12px 4px var(--secondary-color);
+  -webkit-box-shadow: 2px 2px 9px -2px var(--secondary-color),
+    2px 2px 9px 2px var(--secondary-color);
+  box-shadow: 2px 2px 9px -2px var(--secondary-color),
+    2px 2px 9px 2px var(--secondary-color);
   margin-bottom: 25px;
 }
 
@@ -224,7 +231,8 @@ footer .logo {
   cursor: pointer;
 }
 
-.up-viz {
+.up-viz,
+.mp-txn-list {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -234,7 +242,8 @@ footer .logo {
   color: var(--secondary-color);
 }
 
-.up-viz a {
+.up-viz a,
+.mp-txn-list a {
   text-decoration: none;
   color: black;
 }
@@ -275,4 +284,51 @@ footer .logo {
 
 .up-txn-item-delete:hover {
   cursor: pointer;
+}
+
+.mp-wrapper {
+  flex-direction: column;
+}
+
+.mp-bottom {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.pie-wrapper {
+  height: 300px;
+  width: 300px;
+}
+
+.mp-main-pie {
+  display: flex;
+}
+
+.mp-cat-breakdown {
+  margin: auto;
+  width: 300px;
+}
+
+.mp-cat-breakdown h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.mp-cat-breakdown ul {
+  overflow-y: auto;
+  height: 125px;
+}
+
+.mp-cat-breakdown ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.mp-txn-list {
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
