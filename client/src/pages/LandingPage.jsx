@@ -11,7 +11,7 @@ const LandingPage = () => {
       <section className="lp-wrapper">
         <div className="main-video-wrapper">
           <video
-            height="500"
+            height="650"
             src={mainVideo}
             autoPlay
             loop
