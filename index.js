@@ -5,18 +5,17 @@ const app = express();
 const keys = require("./config/keys");
 const cors = require("cors");
 
-app.use(cors());
-app.use(express.json());
-
-const uri = keys.ATLAS_URI;
 mongoose
-  .connect(uri, {
+  .connect(keys.ATLAS_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
   })
   .then(() => console.log("MongoDB Connected..."))
   .catch((err) => console.log(err));
+
+app.use(express.json());
+app.use(cors());
 
 require("./routes/transactionRoutes")(app);
 
