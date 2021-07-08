@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import AssessmentIcon from "@material-ui/icons/Assessment";
 import TransactionItem from "../components/TransactionItem";
+import { myContext } from "../Context";
 
 const UserPage = ({
   txnData,
@@ -40,6 +41,8 @@ const UserPage = ({
     "Other",
   ];
 
+  const userObject = useContext(myContext);
+
   useEffect(() => {
     axios
       .get("/api/transactions")
@@ -67,6 +70,7 @@ const UserPage = ({
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
+      id: userObject.id,
       transactionType,
       category,
       amount,
@@ -135,7 +139,7 @@ const UserPage = ({
           </form>
           <div className="up-viz">
             <AssessmentIcon />
-            <Link to="/:googleId/metrics">Visualizations</Link>
+            <Link to="/visualizations">Visualizations</Link>
           </div>
         </div>
         <div className="up-transactions">

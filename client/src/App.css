@@ -84,11 +84,16 @@ footer .logo {
   color: #fff;
 }
 
-.login {
+.login,
+.logout {
   padding-right: 65px;
   font-size: 20px;
   color: #fff;
   text-decoration: none;
+}
+
+.logout:hover {
+  cursor: pointer;
 }
 
 .lp-wrapper {
@@ -179,7 +184,8 @@ footer .logo {
 }
 
 .user-page,
-.metrics-page {
+.metrics-page,
+.login-page {
   height: calc(100vh - 159px);
 }
 
@@ -331,4 +337,40 @@ footer .logo {
   position: absolute;
   top: 5px;
   right: 5px;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 650px;
+}
+
+.login-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 275px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.login-btn img {
+  width: 35px;
+  background-color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #25252533;
+  cursor: pointer;
 }

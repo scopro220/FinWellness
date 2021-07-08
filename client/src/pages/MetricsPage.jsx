@@ -40,7 +40,7 @@ const MetricsPage = ({ txnData, setTxnData }) => {
         <div className="mp-bottom">
           <div className="mp-txn-list">
             <ListIcon />
-            <Link to="/:googleId">Transactions</Link>
+            <Link to="/transactions">Transactions</Link>
           </div>
           <div className="mp-main-pie">
             <DoughnutData type="Income" data={incData} />
