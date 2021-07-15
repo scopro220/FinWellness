@@ -84,8 +84,6 @@ app.get(
   passport.authenticate("google", { failureRedirect: "/login" }),
   function (req, res) {
     // Successful authentication, redirect home.
-    // change route
-    console.log(req.user);
     res.redirect("http://localhost:3000/transactions");
   }
 );

@@ -27,7 +27,7 @@ const LandingPage = () => {
             When you want to rest your head without worrying about your money.
           </p>
           <p>
-            Turn to FinWellness to keep track of where you are spending you
+            Turn to FinWellness to keep track of where you are spending your
             money.
           </p>
           <p>
