@@ -8,15 +8,6 @@ FinWellness is a web application to keep track of where you are spending your mo
 
 **Server:** [Node](https://nodejs.org/en/), [Express](https://expressjs.com/), [Mongoose](https://mongoosejs.com/), [Passportjs](http://www.passportjs.org/)
 
-## Running the application
-
-To run in dev, run the following command
-
-```bash
-  - npm install
-  - npm run dev
-```
-
 ## API Reference
 
 ### Get all transactions
