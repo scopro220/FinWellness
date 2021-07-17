@@ -48,7 +48,7 @@ To run in dev, run the following command
 #### Reponse
 
 ```http
-  Status: 201 Created
+  Status: 201 CREATED
 ```
 
 ### Delete transactions
@@ -64,16 +64,63 @@ To run in dev, run the following command
 #### Reponse
 
 ```http
-  Status: 204 No Content
+  Status: 204 NO CONTENT
 ```
 
-## Demo Images
+## Color Reference
 
-[Main page](https://i.imgur.com/gM0eT9N.png)
+| Color           | Hex                                                              |
+| --------------- | ---------------------------------------------------------------- |
+| Main Color      | ![#f9a826](https://via.placeholder.com/10/f9a826?text=+) #f9a826 |
+| Secondary Color | ![#474747](https://via.placeholder.com/10/474747?text=+) #474747 |
 
-[Transactions Page](https://i.imgur.com/vovAZzA.png)
+## Environment Variables
 
-[Vizualization Page](https://i.imgur.com/m2UEGQ5.png)
+To run this project, you will need to add the following environment variables to your .env file
+
+`PROD_ATLAS_URI`
+
+`DEV_ATLAS_URI`
+
+`GOOGLE_CLIENT_ID`
+
+`GOOGLE_CLIENT_SECRET`
+
+`SESSION_SECRET`
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/scopro220/FinWellness.git
+```
+
+Go to the project directory
+
+```bash
+  cd FinWellness
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+## Screenshots
+
+![Main Page](https://i.imgur.com/gM0eT9N.png)
+
+![Transactions Page](https://i.imgur.com/vovAZzA.png)
+
+![Vizualization Page](https://i.imgur.com/m2UEGQ5.png)
 
 ## Authors
 
